@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+package com.spring.newProject;
 
 @Controller
 @SpringBootApplication
@@ -17,10 +18,10 @@ public class NewProjectApplication {
 	@RequestMapping("/")
 	@ResponseBody
 	public String index() {
-		return "<ul>" + "<li><a href='/doctor/1'>William Hartinell!</a><li>"
-				+ "<li><a href='/doctor/2'>Patrick Troughton!</a><li>" 
-				+ "<li><a href='/doctor/3'>Jon Pertwee!</a><li>"
-				+ "<li><a href='Ddoctor/4'>Tom Baker!</a><li>" 
+		return "<ul>" + "<li><a href='/doctor/1'>William Hartinell!</a></li>"
+				+ "<li><a href='/doctor/2'>Patrick Troughton!</a></li>" 
+				+ "<li><a href='/doctor/3'>Jon Pertwee!</a></li>"
+				+ "<li><a href='Ddoctor/4'>Tom Baker!</a></li>" 
 				+ "</ul>";
 	}
 
@@ -50,3 +51,4 @@ public class NewProjectApplication {
 	}
 
 }
+
